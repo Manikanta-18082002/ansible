@@ -13,5 +13,5 @@
   - name: checking preference
     vars:
       X: "VAR Level (Local Level) variable...."
-        ansible.builtin.debug:
-          msg: "Hello, Iam from {{X}}"
+    ansible.builtin.debug:
+      msg: "Hello, Iam from {{X}}"
