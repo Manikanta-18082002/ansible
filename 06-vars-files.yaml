@@ -1,0 +1,24 @@
+- name: variables from files # I dont want var in PLAY / Vars Level (Ex: 100 vars I need then create a vars.yaml file)
+  hosts: localhost
+  vars_files: # Include this to Fetch var files
+  - vars.yaml
+  tasks:
+  - name: print override information
+    ansible.builtin.debug:
+        msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
