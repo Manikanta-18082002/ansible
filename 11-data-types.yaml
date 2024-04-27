@@ -3,9 +3,9 @@
   vars:
     Course: DevOps with AWS #It is a String
     Tools:  # List
-    -Linux
-    -Shell
-    -Ansible
+    - Linux
+    - Shell
+    - Ansible
     Experience: #MAP/Dictionary  (Key)
       DevOps: 3  #Number  (Value)
       AWS: 2
