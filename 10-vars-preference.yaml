@@ -1,6 +1,6 @@
 # Below checking when a variable is declared in all locations then from which location does Ansible will consider
 - name: variable preference
-  hosts: localhosts
+  hosts: localhost
   vars: 
     X: "Play Level Variable...."
   vars_files:

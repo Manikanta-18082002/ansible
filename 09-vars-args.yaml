@@ -6,6 +6,7 @@
       msg: "I am {{NAME}}, from {{PLACE}}"
 
 # TO Run in Super Putty
+
 # $ ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 09-vars-args.yaml 
 # -e "NAME=MANIKANTA PLACE=MUMBAI"
 
