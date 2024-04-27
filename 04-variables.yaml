@@ -1,6 +1,6 @@
 - name: variables
   hosts: localhost
-  vars: #Variable Decleration
+  vars: #Variable Decleration in PLAY LEVEL
     Course: Terraform
     Trainer: Siva
     Duration: "15hrs"

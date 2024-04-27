@@ -1,0 +1,16 @@
+- name: variables
+  hosts: localhost
+  vars: #Variable Decleration in PLAY LEVEL
+    Course: Terraform
+    Trainer: Siva
+    Duration: "15hrs"
+  tasks:
+    - name: print override information
+      vars: # Task Level vars (Over-riding  (Priority to Local Var))
+        Course: DevOps 
+      ansible.builtin.debug:
+        msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
+
+    - name: print information  # (NOT overriding, Just Inheriting... from PLAY LEVEL (Global Variables...))
+      ansible.builtin.debug:
+        msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
