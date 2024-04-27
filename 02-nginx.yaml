@@ -5,7 +5,7 @@
   - name: install nginx
     ansible.builtin.dnf: # To work for all Distributions -> dnf  (.yum module-> Works only for RHEL)
       name: nginx
-      state: latest
+      state: latest #Installing latest version
   - name: start nginx
     ansible.builtin.service:
       name: nginx

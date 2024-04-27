@@ -4,8 +4,8 @@
   tasks:
   - name: check user exists or not
     ansible.builtin.command: id expense #Here user not available then create user
-    register: USER  #Out ut of expense store in USER Var In Shell taking output from input ( X=$(NAME))
-    ignore_errors: true #We know error will come here saying just ignore
+    register: USER  #expense store's in USER Var. Ex: In Shell taking output from input ( USER=$(EXPENSE))
+    ignore_errors: true #We know error will come here saying just ignore. If no ignore then Ansible stops here
 
   - name: print user information
     ansible.builtin.debug:

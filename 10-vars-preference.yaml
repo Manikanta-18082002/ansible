@@ -17,7 +17,7 @@
       msg: "Hello, Iam from {{X}}"
 
 
-# 1st Preference is From ARGUMENTS
+# 1st Preference is For ARGUMENTS
 # 2nd Task Level
 # 3rd Variable Files
 # 4th Prompt

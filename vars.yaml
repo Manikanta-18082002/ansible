@@ -2,3 +2,80 @@ Course: DevOps with AWS
 Trainer: SivaKumar
 Duration: "3.5 Months"
 #X: "From VAR_FILES..."
+
+# 1st Preference is For ARGUMENTS
+# 2nd Task Level
+# 3rd Variable Files
+# 4th Prompt
+# 5th PLAY Level
+# 6th Inventory
+# 7th Role Level
+
+
+
+
+
+
+
+- name: conditions
+  hosts: web
+  become: yes
+  tasks:
+    - name: check user exist 
+      ansible.builtin.command: id expense
+      register: USER
+      ignore_errors: true
+    - name: Print user information
+      ansibile.builtin.debug:
+       msg: User {{USER}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,6 @@
 - name: variables
   hosts: localhost
-  vars: #Variable Decleration in PLAY LEVEL
+  vars: #PLAY LEVEL Variable Decleration
     Course: Terraform
     Trainer: Siva
     Duration: "15hrs"
@@ -8,3 +8,5 @@
     - name: print information
       ansible.builtin.debug:
         msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
+
+
