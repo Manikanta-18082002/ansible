@@ -2,8 +2,8 @@
   hosts: localhost
   tasks:
   - name: print information
-  ansible.builtin.debug:
-    msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
 
 #No need to mention INVENTORY (Ansible will automatically will search)
 #Search for All possible Locations...like: -> PLAYLEVEL -> TASK LEVEL -> FILES -> PROMPT -> Finally in Inventory file
