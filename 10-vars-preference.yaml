@@ -1,0 +1,17 @@
+# Below checking when a variable is declared in all locations then from which location does Ansible will consider
+- name: variable preference
+  hosts: localhosts
+  vars: 
+    X: "Play Level Variable...."
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: X
+    prompt: Please Enter X
+    private: false
+  tasks: 
+  - name: checking preference
+    vars:
+      X: "VAR Level (Local Level) variable...."
+      ansible.builtin.debug:
+        msg: "Hello, Iam from {{X}}"
