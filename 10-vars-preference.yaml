@@ -11,13 +11,14 @@
     private: false
   tasks: 
   - name: checking preference
-    vars:
-      X: "VAR Level (Local Level) variable...."
+    # vars:
+    #   X: "VAR/TASK Level (Local Level) variable...."
     ansible.builtin.debug:
       msg: "Hello, Iam from {{X}}"
 
 
 # 1st Preference is From ARGUMENTS
-# 2nd 
+# 2nd Task Level
+# 
 
 
