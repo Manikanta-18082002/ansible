@@ -1,0 +1,23 @@
+Create 2 Servers : Ansible_Master, Ansible_Node
+
+1. Install Ansible: sudo dnf install ansible -y (Ansible is developed using Python)
+2. Ansible is populare due to 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
