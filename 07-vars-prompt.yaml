@@ -1,6 +1,6 @@
 - name: variables from prompt
   hosts: localhost
-  vars_promt:
+  vars_prompt:
   - name: USERNAME # Act as Input when user enters text
     prompt: Please Enter Your Name
     private: false # Display name on screen
