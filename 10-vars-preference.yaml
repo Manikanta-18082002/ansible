@@ -5,10 +5,10 @@
     X: "Play Level Variable...."
   vars_files:
   - vars.yaml
-  vars_prompt:
-  - name: X
-    prompt: Please Enter X
-    private: false
+  # vars_prompt:
+  # - name: X
+  #   prompt: Please Enter X
+  #   private: false
   tasks: 
   - name: checking preference
     # vars:
@@ -20,5 +20,6 @@
 # 1st Preference is From ARGUMENTS
 # 2nd Task Level
 # 3rd Variable Files
-
+# 4th Prompt
+# 5th 
 
