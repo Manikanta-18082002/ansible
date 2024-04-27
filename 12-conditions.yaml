@@ -1,0 +1,11 @@
+- name: conditions
+  hosts: web
+  become: yes
+  tasks:
+  - name: check user exists or not
+    ansible.builtin.command: id expense #Here user not available then create user
+    #ignore_errors: true #We know error will come here saying just ignore
+
+  - name: say Hello
+    ansible.builtin.debug:
+      msg: "Hello"
