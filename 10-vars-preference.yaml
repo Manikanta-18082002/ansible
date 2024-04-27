@@ -15,3 +15,9 @@
       X: "VAR Level (Local Level) variable...."
     ansible.builtin.debug:
       msg: "Hello, Iam from {{X}}"
+
+
+# 1st Preference is From ARGUMENTS
+# 2nd 
+
+
