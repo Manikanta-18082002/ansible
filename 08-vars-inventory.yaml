@@ -6,7 +6,7 @@
     msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
 
 #No need to mention INVENTORY (Ansible will automatically will search)
-#search for All possible Locations...like: -> PLAYLEVEL -> TASK LEVEL -> FILES -> PROMPT -> Finally in Inventory file
+#Search for All possible Locations...like: -> PLAYLEVEL -> TASK LEVEL -> FILES -> PROMPT -> Finally in Inventory file
 
 
 
