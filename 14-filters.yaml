@@ -3,4 +3,12 @@
   tasks: 
   - name: print default value
     ansible.builtin.debug:
-      msg: "Hai {{z}}"
+      msg: "Hai {{z | default ('there')}}"  # | default (' ') --> ? When no value is passed then default value will be taken
+
+
+
+
+
+
+
+      
