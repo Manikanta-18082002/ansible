@@ -16,6 +16,23 @@
       msg: "{{text | upper}}"
 
 
+- name: upper case
+  hosts: localhost
+  vars:
+  texts: MAni KanTA
+  tasks:
+  - name: convert to lower case
+    ansible.builtin.debug:
+      msg: "{{texts | lower}}"
+
+
+
+
+
+
+
+
+
 
 
 
