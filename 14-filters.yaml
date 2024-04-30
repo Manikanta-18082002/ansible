@@ -48,10 +48,35 @@
 
 
 
+- name: convert dictonary into items/list
+  hosts: localhost
+  my_dict:
+    FirstName: Manikanta
+    LastName: Konuganti
+    Age: "21"
+  tasks:
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "Before Convert: {{my_dict }}"
+
+  - name: after convert
+    ansible.builtin.debug:
+      msg: "After Convert: {{my_dict | dict2items}}"
 
 
+- name: convert items to dictonary
+  hosts: localhost
+  my_list:
+  - {'key' : 'FirstName' , 'value': 'Jagan'}
+  - {'key' : 'LastName' , 'value' : 'Konu'}
+  tasks:
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "Before convert: {{my_list}}"
 
-
+  - name: After convert
+    ansible.builtin.debug:
+      msg: "After convert: {{my_list | items2dict}}"
 
 
 
