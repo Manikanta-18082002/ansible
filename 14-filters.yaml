@@ -13,7 +13,8 @@
   tasks:
   - name: convert to upper case
     ansibile.builtin.debug:
-      msg: {{text | upper}}
+      msg: "{{text | upper}}"
+      
 
 
 
