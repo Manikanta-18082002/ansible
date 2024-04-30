@@ -6,9 +6,18 @@
       msg: "Hai {{z | default ('there')}}"  # | default (' ') --> ? When no value is passed then default value will be taken
 
 
+- name: upper case
+  hosts: localhost
+  vars: 
+    text: mani kanta
+  tasks:
+  - name: convert to upper case
+    ansibile.builtin.debug:
+      msg: {{text | upper}}
 
 
 
 
 
-      
+
+
