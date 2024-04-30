@@ -1,0 +1,10 @@
+- name: demo on Loops
+  hosts: localhost
+  tasks:
+    - name: print names using loops
+      ansible.builtin.debug:
+        msg: "Printing message using loops: {{item}}"
+      loop:
+      - "Hai"
+      - "Hello"
+      - "How are you?"
