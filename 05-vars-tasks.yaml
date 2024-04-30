@@ -16,3 +16,10 @@
     - name: print information  # (NOT overriding, Just Inheriting... from PLAY LEVEL (Global Variables...))
       ansible.builtin.debug:
         msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}} Total duration around {{Duration}}...."
+
+
+
+
+
+
+
