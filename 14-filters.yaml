@@ -19,7 +19,7 @@
 - name: upper case
   hosts: localhost
   vars:
-  texts: MAni KanTA
+    texts: MAni KanTA
   tasks:
   - name: convert to lower case
     ansible.builtin.debug:
