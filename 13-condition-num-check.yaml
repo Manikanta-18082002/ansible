@@ -5,16 +5,23 @@
       prompt: Please Enter a Number
       private: no
   tasks:
-    - name: Number is less than 10
-      ansible.builtin.debug:
-        msg: Given number {{number}} is less than 10
-      when: number <10
-    - name: Number is greater than 10
-      ansible.builtin.debug:
-        msg: Given number {{number}} is greater than 10
-      when: number >=10
+  - name: Number is less than 10
+    ansible.builtin.debug:
+      msg: Given number {{number}} is less than 10
+    when: number | int <10 # | int --> Why? - to take it as an int (Instead of string/text)
+
+  - name: Number is greater than 10
+    ansible.builtin.debug:
+      msg: Given number {{number}} is greater than 10
+    when: number | int >=10 #
 
 
+
+#In Ansible we cannot create Function. We use existing filters 
+# Filter = data transformation / manipulation (Ex: aws --> AWS)
+
+### Any Programming or Scripting when data entered in prompt it considered by default as TEXT/STRING
+# Filter is denoted by | (Pipe Symbol)
 
 
     
