@@ -23,5 +23,6 @@
 ### Any Programming or Scripting when data entered in prompt it considered by default as TEXT/STRING
 # Filter is denoted by | (Pipe Symbol)
 
+# 0 --> When text is given (It will unable to convert to int)
 
     
