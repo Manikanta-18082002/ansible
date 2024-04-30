@@ -27,7 +27,13 @@
 
 
 
-
+- name: remove duplicates
+  hosts: localhost
+  vars:
+    numbers: [2,4,1,4,6]
+  - name: remove duplicates
+    ansible.builtin.debug:
+      msg: "{{numbers | unique}}"
 
 
 
