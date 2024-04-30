@@ -12,9 +12,9 @@
     text: mani kanta
   tasks:
   - name: convert to upper case
-    ansibile.builtin.debug:
+    ansible.builtin.debug:
       msg: "{{text | upper}}"
-      
+
 
 
 
